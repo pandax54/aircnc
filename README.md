@@ -13,6 +13,8 @@
 ![stacks](https://img.shields.io/static/v1?label=ReactNative&message=v16.13.1&color=brightgreen)
 ![stacks](https://img.shields.io/static/v1?label=stack&message=Typescript&color=blue)
 ![stacks](https://img.shields.io/static/v1?label=stack&message=Express&color=blue)
+![stacks](https://img.shields.io/static/v1?label=database&message=MongoDB&color=blue)
+![stacks](https://img.shields.io/static/v1?label=MongoDB&message=mongoose&color=brightgreen)
 
 <br>
 
