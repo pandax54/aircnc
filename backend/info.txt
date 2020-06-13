@@ -1,0 +1,24 @@
+// yarn tsc
+yarn dev:server
+
+database: mongodb atlas
+aircnc_admin
+aircnc_pass
+
+
+// configurar
+Database Access 
+Network Access
+
+-cluster -> connect -> connect your application -> select node and copy the code
+// mongodb+srv://aircnc_admin:<password>@aircnc-up4sy.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+yarn add mongoose
+npm install @types/mongoose
+
+
+portquiz.net:27017 (porta do mongodb)
+>> You have reached this page on port 27017. == success
+
+
+Imnsonia -> criar base_url
