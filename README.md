@@ -1,19 +1,18 @@
 
 <h1 align="center">
-    <img alt="Aircnc" title="#delicinha" src=".github/logo.png" width="250px" />
+    <img alt="Aircnc" src="logo.png" width="250px" />
 </h1>
 
 <h4 align="center">
   ☕ Code and coffee
 </h4>
-<p align="center">
+
+
 ![stacks](https://img.shields.io/static/v1?label=Nodejs&message=v12.17.0&color=brightgreen)
 ![stacks](https://img.shields.io/static/v1?label=React&message=v16.13.1&color=brightgreen)
 ![stacks](https://img.shields.io/static/v1?label=ReactNative&message=v16.13.1&color=brightgreen)
 ![stacks](https://img.shields.io/static/v1?label=stack&message=Typescript&color=blue)
 ![stacks](https://img.shields.io/static/v1?label=stack&message=Express&color=blue)
-</p>
-
 
 <br>
 
