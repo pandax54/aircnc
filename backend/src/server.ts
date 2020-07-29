@@ -2,6 +2,8 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import routes from './routes';
+import path from 'path'
+
 
 // mongodb+srv://aircnc_admin:<password>@aircnc-up4sy.mongodb.net/<dbname>?retryWrites=true&w=majority
 
@@ -16,8 +18,12 @@ import cors from 'cors';
 
 const app = express();
 
-app.use(cors())
+// especificar quem tem acesso à api
+// app.use(cors({ origin: 'http://localhost:3333'}))
+app.use(cors());
 app.use(express.json());
+// path - files 
+app.use('/files', express.static(path.resolve(__dirname, "..", 'uploads')));
 app.use(routes);
 
 

@@ -2,7 +2,7 @@ import mongoose, { Document, Schema, Model } from 'mongoose';
 import { IUser } from './User';
 
 export interface ISpot extends Document {
-    thumnail: string;
+    thumbnail: string;
     company: string;
     price: number;
     techs: String[];
@@ -11,7 +11,7 @@ export interface ISpot extends Document {
 
 
 const SpotSchema = new Schema({
-    thumnail: {
+    thumbnail: {
         type: String,
         required: true
     },
@@ -32,8 +32,18 @@ const SpotSchema = new Schema({
         required: true,
         ref: 'User'
     }
+}, {
+    toJSON: {
+        virtuals: true
+    }
 });
 
+// imagem aula 03 1:06:00
+// agora precisaremos criar uma rota para retornar essa imagem
+// importaremos o path no server
+SpotSchema.virtual('thumbnail_url').get(function () {
+    return `http://localhost:5000/files/${this.thumbnail}`
+})
 
 const Spot = mongoose.model<ISpot>('Spot', SpotSchema);
 

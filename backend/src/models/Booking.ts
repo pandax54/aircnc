@@ -1,3 +1,4 @@
+// https://www.youtube.com/watch?v=aTf8QTjw4RE&t=1530s 
 import mongoose, { Document, Schema, Model } from 'mongoose';
 import { IUser } from './User';
 import { ISpot } from './Spot';

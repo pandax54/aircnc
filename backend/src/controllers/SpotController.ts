@@ -38,7 +38,7 @@ export default {
         // persistencia dos dados pra database
         const spot = await Spot.create({
             user: user_id,
-            thumnail: filename,
+            thumbnail: filename,
             company,
             techs: techs.split(',').map((tech: String) => tech.trim()),
             price

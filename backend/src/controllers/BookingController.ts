@@ -19,6 +19,7 @@ export default {
             date
         });
 
+        // resgatar as informacoes das demais tabelas por meio dos ids 
         await booking.populate('spot').populate('user').execPopulate();
 
         return res.json(booking);

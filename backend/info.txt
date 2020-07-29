@@ -2,6 +2,7 @@
 yarn dev:server
 
 database: mongodb atlas
+https://cloud.mongodb.com/v2/5ee3dfd3d747e2064fdd6f64#metrics/replicaSet/5f1f41c9c8ec1b678bf18cb8/explorer/aircnc/spots/find
 aircnc_admin
 aircnc_pass
 
