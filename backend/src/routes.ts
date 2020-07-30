@@ -5,7 +5,8 @@ import DashboardController from './controllers/DashboardController';
 import multer from 'multer';
 import uploadConfig from './config/upload';
 import BookingController from './controllers/BookingController';
-
+import ApprovalController from './controllers/ApprovalController';
+import RejectionController from './controllers/RejectionController';
 
 
 const upload = multer(uploadConfig)
@@ -26,5 +27,11 @@ routes.get('/spots', SpotController.index);
 routes.post('/spots', upload.single('thumbnail'), SpotController.store);
 // o booking passará pela rota de spots -> rota encadeada
 routes.post('/spots/:spot_id/booking', BookingController.store);
+
+// ACEITAR E REJEITAR BOOKINGS
+// aula 05 30:20
+routes.post('/bookings/:booking_id/approve', ApprovalController.store)
+routes.post('/bookings/:booking_id/rejection', RejectionController.store)
+
 
 export default routes;

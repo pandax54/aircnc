@@ -49,3 +49,6 @@ https://stackoverflow.com/questions/38114325/cant-show-image-in-react-native
 ## Styles
 você pode colocar mais de um estilo de uma vez só colocando em um array
 style={[styles.cancelButton, styles.cancel]}
+
+## websocket
+// aula 05 40:00

@@ -87,3 +87,9 @@ Para adicionarmos um sistemas de rotas no react utilizaremos o react-router-dom
 ```
 yarn add react-router-dom
 ```
+
+## Websocket
+
+```
+$ yarn add socket.io-client
+```

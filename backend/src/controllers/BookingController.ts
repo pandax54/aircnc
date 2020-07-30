@@ -13,7 +13,10 @@ export default {
 
         const { date } = req.body
 
+        // req.io (server.ts)
+
         const booking = await Booking.create({
+            // usuário que criou a solicitação
             user: user_id,
             spot: spot_id,
             date
@@ -21,6 +24,14 @@ export default {
 
         // resgatar as informacoes das demais tabelas por meio dos ids 
         await booking.populate('spot').populate('user').execPopulate();
+
+        // pegar o user id do usuário que criou o spot
+        const ownerSocket = req.connectedUsers[booking.spot.user];
+
+        if (ownerSocket) {
+            // se o criador do spot estiver logado receberá uma mensagem de confirmação de reserva
+            req.io.to(ownerSocket).emit('booking_request', booking)
+        }
 
         return res.json(booking);
 
