@@ -38,6 +38,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Aircnc é um projeto que visa conectar empresas que querem abrir spots e desenvolvedores que procuram um lugar para trocar ideias com devs, conhecer a empresa e trabalhar lá por um período.
 
+Aircnc is a project to connect tech companys with available space and developers, freelancers, small companys that dont have a head office and etc. 
+The developers can use the app to schedule some spot between all the options available and exchange message real time to ask about any details.
+
 
 ###### Developed on Omnistack 9 from [RocketSeat](https://rocketseat.com.br) :rocket:.
 
